@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Homeagotchi",
+        "description": "Choose the Home Assistant entities Homeagotchi should watch.",
+        "data": {
+          "weather_entity": "Weather entity",
+          "washing_machine_entity": "Washing machine state sensor",
+          "dryer_entity": "Dryer state sensor",
+          "light_entities": "Lights to watch",
+          "bin_entity": "Bin collection entity",
+          "energy_price_entity": "Energy price sensor",
+          "energy_price_high": "Expensive energy threshold",
+          "ignored_delay_minutes": "Ignored delay",
+          "quiet_hours_start": "Quiet hours start",
+          "quiet_hours_end": "Quiet hours end"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Homeagotchi is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "scene": {
+        "name": "Scene"
+      },
+      "emotion": {
+        "name": "Emotion"
+      },
+      "message": {
+        "name": "Message"
+      },
+      "led_color": {
+        "name": "LED color"
+      },
+      "led_mode": {
+        "name": "LED mode"
+      },
+      "last_update": {
+        "name": "Last update"
+      }
+    }
+  }
+}
